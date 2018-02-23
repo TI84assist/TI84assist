@@ -50,6 +50,38 @@ ul.topnav li.right {float: right;}
     ul.topnav li.right, 
     ul.topnav li {float: none;}
 }
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.column.middle {
+    width: 25%;
+}
+
+.column.side {
+    width: 75%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
 </style>
 
     </head>
@@ -65,11 +97,21 @@ ul.topnav li.right {float: right;}
             <li><a href="vertical.html">Vertical Line Grapher</a></li>
         </ul>  
         <h1 style="font-size:300%;text-align:center;">Ti84 Calculator Tips and Tricks</h1>
- <h2>The techniques demonstrated on this website are oriented towards models from the TI84 family. Some of these methods may be applied to the TI83 and TI89.</h2>
-       <p>My apologies for the basic formatting and limited content. I will improve this website over the course of the next few weeks.</p>
-       <footer>
-            <p>Updated February 2018</p>
-            <p>Contact information: <a href="mailto:howdoIturnonmycomputer@gmail.com">howdoIturnonmycomputer@gmail.com</a>.</p>
+        <div class="row">
+            <div class="column side">
+              <h2>Main Content</h2>
+              <p>The techniques demonstrated on this website are oriented towards models from the TI84 family. Some of these methods may be applied to the TI83 and TI89</p>
+              <p>My apologies for the basic formatting and limited content. I will improve this website over the course of the next few weeks.</p>
+              
+            </div>
+            <div class="column middle">
+              <h2>About</h2>
+              <p>Updated: February 2018</p>
+              <p>Contact information: <a href="mailto:howdoIturnonmycomputer@gmail.com">howdoIturnonmycomputer@gmail.com</a>.</p>
+            </div>
+          </div>
+    <!--nothing yet-->
+          <footer>         
           </footer>
           
     </body>
